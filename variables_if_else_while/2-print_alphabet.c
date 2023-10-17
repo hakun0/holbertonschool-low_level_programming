@@ -9,5 +9,14 @@
 
 int main(void)
 {
-	printf("abcdefghijklmnopqrstuvwxyz\n");
+	char letter = 'a';
+
+	while (letter <= 'z')
+	{
+	putchar(letter);
+	letter++;
+	}
+	putchar('\n');
+
+	return (0);
 }
