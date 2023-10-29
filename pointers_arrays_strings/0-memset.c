@@ -1,4 +1,3 @@
-#include <main.h>
 /**
  * _memset - function
  * @s: char ptr
