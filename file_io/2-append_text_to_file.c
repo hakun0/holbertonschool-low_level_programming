@@ -1,13 +1,13 @@
 #include "main.h"
 
 /**
-* create_file - function
+* append_text_to_file - function
 * @filename: const char ptr
 * @text_content: char ptr
 *
 * Return: int
 */
-int	create_file(const char *filename, char *text_content)
+int	append_text_to_file(const char *filename, char *text_content)
 {
 	int	f;
 	int	l;
@@ -15,7 +15,7 @@ int	create_file(const char *filename, char *text_content)
 
 	if (filename == 0)
 		return (-1);
-	f = open(filename, O_TRUNC | O_CREAT | O_WRONLY, 384);
+	f = open(filename, O_RDWR | O_APPEND);
 	if (f < 0)
 		return (-1);
 	l = 1;
